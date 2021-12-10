@@ -11,12 +11,6 @@ from transformers import (
 
 logger = logging.getLogger(__name__)
 
-version_2_with_negative = True
-n_best_size = 10
-max_answer_length = 50
-null_score_diff_threshold = 1.0
-output_dir = "./output"
-answer_column_name = "answers"
 
 # Post-processing:
 def post_processing_function(

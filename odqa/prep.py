@@ -1,11 +1,4 @@
 
-question_column_name = "question"
-context_column_name = "context"
-max_seq_length = 384
-doc_stride = 128
-pad_to_max_length = True
-
-
 
 def get_extractive_features(tokenizer):
 
