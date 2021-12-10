@@ -1,3 +1,10 @@
+from .constants import (
+    question_column_name,
+    context_column_name,
+    max_seq_length,
+    doc_stride,
+    pad_to_max_length,
+)
 
 
 def get_extractive_features(tokenizer):

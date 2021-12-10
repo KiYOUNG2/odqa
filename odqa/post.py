@@ -9,6 +9,15 @@ from transformers import (
     EvalPrediction,
 )
 
+from .constants import (
+    version_2_with_negative,
+    n_best_size,
+    max_answer_length,
+    null_score_diff_threshold,
+    output_dir,
+    answer_column_name,
+)
+
 logger = logging.getLogger(__name__)
 
 
