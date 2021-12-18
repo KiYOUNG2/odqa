@@ -34,6 +34,12 @@ class ODQA(QABase):
         self.model = AutoModelForQuestionAnswering.from_pretrained(model_name_or_path)
         self.preprocess_function = get_extractive_features(self.tokenizer)
         self.post_process_function = post_processing_function
+        
+    @property
+    def word_embeddings(self):
+        """ Return word embeddings """
+        prefix = self.model.base_model_prefix
+        return getattr(self.model, prefix).embeddings.word_embeddings
                 
     def answer(
         self,
